@@ -67,6 +67,7 @@ module.exports = function(grunt) {
         src: 'index.js',
         dest: 'sir-trevor.debug.js',
         options: {
+          transform: [['deamdify', {global: true}]],
           browserifyOptions: {
             standalone: 'SirTrevor',
             debug: true,
@@ -75,6 +76,7 @@ module.exports = function(grunt) {
       },
       options: {
         banner: banner,
+        transform: [['deamdify', {global: true}]],
         browserifyOptions: {
           standalone: 'SirTrevor',
         },

@@ -5848,6 +5848,10 @@ module.exports = Block.extend({
   Text Block
 */
 
+// var _ = require('../lodash');
+
+// var Scribe = require('scribe-editor');
+
 var Block = require('../block');
 var stToHTML = require('../to-html');
 
@@ -5863,7 +5867,14 @@ module.exports = Block.extend({
 
   loadData: function(data){
     this.getTextBlock().html(stToHTML(data.text, this.type));
-  }
+  },
+
+  /* onBlockRender: function() {
+   *   if (_.isUndefined(this._scribe)) {
+   *     this._scribe = new Scribe(this.$('.st-text-block').get(0));
+   *   }
+   *   this.focus();
+   * }, */
 });
 
 },{"../block":61,"../to-html":99}],75:[function(require,module,exports){
