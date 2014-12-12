@@ -10,6 +10,7 @@
     "dist": "grunt",
     "dev": "grunt dev watch"
   },
+  "main": "index.js",
   "dependencies": {
     "es6-shim": "^0.21.0",
     "eventablejs": "^1.0.5",
