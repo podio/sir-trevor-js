@@ -1,0 +1,32 @@
+// TEMP table styles
+.st-text-block table {
+  width: 100%;
+  position: relative;
+  border-collapse: collapse;
+  margin: 1em 0;
+
+  caption {
+    width: 25%;
+    min-width: 25%;
+    max-width: 100%;
+    background: #f3f3f3;
+    text-align:left;
+  }
+
+  td, th {
+    min-width: 30px;
+    border: 1px solid black !important;
+  }
+  td {
+    border: 1px solid #ddd !important;
+  }
+  th {
+    border: 1px solid black !important;
+  }
+  thead tr {
+    border: 1px solid black !important;
+  }
+  tbody tr {
+    border: 1px solid #ddd !important;
+  }
+}

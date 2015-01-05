@@ -53,6 +53,9 @@ var Locales = {
       },
       heading: {
         'title': "Heading"
+      },
+      table: {
+        'title': "Table"
       }
     }
   }
