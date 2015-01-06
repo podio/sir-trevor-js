@@ -2,6 +2,7 @@
 
 var $ = require('jquery');
 var Block = require('../block');
+var APIService = require('services/APIService');
 
 module.exports = Block.extend({
 
@@ -15,7 +16,7 @@ module.exports = Block.extend({
 
   loadData: function(data){
     // Create our image tag
-    this.$editor.html($('<img>', { src: data.file.url }));
+    this.$editor.html($('<img>', { src: APIService.getThumbnailURLForFileLink(data.file.url) }));
   },
 
   onBlockRender: function(){
